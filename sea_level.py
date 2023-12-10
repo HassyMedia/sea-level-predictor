@@ -21,3 +21,12 @@ x_pred_new = pd.Series([i for i in range(2000, 2051)])
 y_pred_new = res_new.intercept + res_new.slope * x_pred_new
 plt.plot(x_pred_new, y_pred_new, 'green')
 
+# Add labels and title
+plt.xlabel('Year')
+plt.ylabel('Sea Level (inches)')
+plt.title('Rise in Sea Level')
+
+# Show plot
+plt.show(block=True)
+
+
